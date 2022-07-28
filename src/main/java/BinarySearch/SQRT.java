@@ -7,19 +7,16 @@ public class SQRT {
         int r = x;
         int m = -1;
         while(l <= r) {
-            m = (l+r)/2;
-            int num = m*m;
-            if (num == x) {
+            m = l + (r-l)/2;
+            if (x/m == m) {
                 return m;
             }
-            else if (num < x) {
-                l = m + 1;
-
-            }
-            else {
+            else if (x/m < m) {
                 r = m - 1;
             }
-        }
+            else {
+                l = m + 1;
+            }        }
         return r;
     }
 }

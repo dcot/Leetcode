@@ -6,14 +6,38 @@ import DFSAndStack.LetterCombinations;
 
  */
 public class Main {
+    enum Season{
+        SPRING("春天","1-3"),
+        SUMMER("夏天","4-7");
+        private String name;
+        private String date;
+        Season(String name, String date) {
+            this.name = name;
+            this.date = date;
+        }
+
+        @Override
+        public String toString() {
+            return "Season{" +
+                    "name='" + name + '\'' +
+                    ", date='" + date + '\'' +
+                    '}';
+        }
+    }
     public static void main(String[] args) {
-//        StringBuilder stringBuilder = new StringBuilder("abc");
-//        stringBuilder.append('d');
-//        System.out.println(stringBuilder);
-//        stringBuilder.deleteCharAt(stringBuilder.length()-1);
-//        System.out.println(stringBuilder);
-        LetterCombinations letterCombinations = new LetterCombinations();
-        letterCombinations.letterCombinations("23");
+
+    }
+    public static class A<T,K> {
+        T t;
+        K k;
+        public <T> void print(T t) {
+            System.out.println(t);
+            System.out.println(k);
+        }
+
     }
 
+    public static <T> T print(T t){
+        return t;
+    }
 }
