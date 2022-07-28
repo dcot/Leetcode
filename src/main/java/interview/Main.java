@@ -7,8 +7,10 @@ import DFSAndStack.LetterCombinations;
  */
 public class Main {
     enum Season{
-        SPRING("春天","1-3"),
-        SUMMER("夏天","4-7");
+        SPRING("春天","2-5"),
+        SUMMER("夏天","6-9"),
+        AUTUMN("秋天","9-11"),
+        WINTER("冬天","12-1");
         private String name;
         private String date;
         Season(String name, String date) {
