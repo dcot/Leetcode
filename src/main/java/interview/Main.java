@@ -9,9 +9,8 @@ public class Main {
     enum Season{
         SPRING("春天","2-5"),
         SUMMER("夏天","6-9"),
-        AUTUMN("秋球天","9-11"),
-        WINTER("冬天","12-1"),
-        A("AA","12-1");
+        AUTUMN("秋天","9-11"),
+        WINTER("冬天","12-1");
         private String name;
         private String date;
         Season(String name, String date) {
@@ -43,4 +42,5 @@ public class Main {
     public static <T> T print(T t){
         return t;
     }
+
 }
