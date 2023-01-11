@@ -40,4 +40,23 @@ public class Search {
         }
         return index;
     }
+    //求第一个或最后一个出现
+    public int search3(int[] nums, int target) {
+        if (nums == null || nums.length == 0) return -1;
+        int l = 0;
+        int r = nums.length-1;
+        while (l +1 < r) {
+            int m = l + (r - l) / 2;
+            if (nums[m] == target) {
+                return m;
+            } else if (nums[m] < target) {
+                l = m;
+            } else {
+                r = m;
+            }
+        }
+        if (nums[l] == target) return l;
+        if (nums[r] == target) return r;
+        return -1;
+    }
 }

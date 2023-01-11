@@ -42,4 +42,5 @@ public class Main {
     public static <T> T print(T t){
         return t;
     }
+
 }
